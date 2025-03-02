@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff; /* Light blue background */
@@ -9,7 +9,7 @@ body {
 
 /* Navigation Bar */
 header {
-    background: #0096c7; /* Light blue header */
+    background: rgba(0, 150, 199, 0.9); /* Semi-transparent navbar */
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -48,13 +48,44 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
     color: white;
 }
 
-.hero .overlay {
-    background: rgba(0, 150, 199, 0.7); /* Light blue overlay */
-    padding: 50px;
+/* Dark overlay to reduce brightness of background */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay (40% opacity) */
+    z-index: 1;
+}
+
+/* Hero content box */
+.hero-overlay {
+    background: rgba(0, 150, 199, 0.5); /* Transparent light blue */
+    padding: 30px 50px; /* Reduced size */
     border-radius: 10px;
+    backdrop-filter: blur(8px); /* Glassmorphism effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* Animated Heading */
+.animated-text {
+    font-size: 2.5rem; /* Slightly smaller */
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtle text fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Sections */
