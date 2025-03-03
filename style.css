@@ -7,9 +7,13 @@ body {
     color: #333;
 }
 
+.custom-title {
+    color: #0077b6; 
+}
+
 /* Navigation Bar */
 header {
-    background: rgba(0, 150, 199, 0.9); /* Semi-transparent navbar */
+    background: rgba(0, 150, 199, 0.7); /* Semi-transparent navbar */
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -77,7 +81,7 @@ nav ul li a:hover {
 
 /* Animated Heading */
 .animated-text {
-    font-size: 2.5rem; /* Slightly smaller */
+    font-size: 4rem; /* Slightly smaller */
     font-weight: 600;
     animation: fadeIn 2s ease-in-out;
 }
@@ -99,6 +103,10 @@ section {
     margin: auto;
 }
 
+.paragraph {
+    text-align: left;
+}
+
 /* About Section */
 #about img {
     width: 150px;
@@ -106,6 +114,113 @@ section {
     border-radius: 50%;
     margin-top: 20px;
 }
+
+/* Research Section */
+#research {
+    background: #f0f8ff; /* Same as other sections */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Container for research content */
+.research-list {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Styling each paper entry */
+.paper {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Subtle line between papers */
+}
+
+/* Paper title links */
+.paper h3 a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.paper h3 a:hover {
+    color: #0096c7;
+    text-decoration: underline;
+}
+
+/* Author and publication details */
+.paper p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Teaching Section */
+#teaching {
+    background: #f0f8ff; /* Matches other sections */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Course list container */
+.course-list {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Course title as a button */
+.course {
+    background: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* When a course is clicked, expand it */
+.course.active {
+    width: 100%;
+    border-radius: 15px;
+    background: #005f8b;
+    padding: 20px;
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+/* Course details (hidden by default) */
+.course-details {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* When active, show details */
+.course.active .course-details {
+    display: block;
+}
+
+
 
 /* Footer */
 footer {

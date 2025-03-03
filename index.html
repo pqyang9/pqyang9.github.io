@@ -23,31 +23,99 @@
     <section id="home" class="hero">
         <div class="hero-overlay">
             <h1 class="animated-text">Peiqi Yang</h1>
-            <p>A place to share my research and teaching experiences.</p>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2 class="custom-title">About Me</h2>
         <div class="container">
             <img src="images/profile.jpg" alt="Profile Picture">
-            <p>Hello! My name is Peiqi Yang (杨沛琦), a mathematical researcher in Algebraic Topology and Machine Learning. </p>
+            <p class="paragraph">I am currently a PhD candidate in Mathematics at the George Washington University, under the guidance of <a href="https://sites.google.com/site/haowugwu/home" target="_blank">Hao Wu</a>. I completed my bachelor's degree in Mathematics at the University of Science and Technology of China (USTC). Here is my <a href="docs/CV.pdf" target="_blank">CV</a>. </p>
         </div>
     </section>
 
     <section id="research">
-        <h2>My Research</h2>
-        <p>Publications.</p>
-    </section>
+    <h2 class="custom-title">My Research</h2>
+    <div class="container">
+        <p class="paragraph">
+            My research interests are applications in algebraic topology and differential geometry, especially in data science and machine learning. I am also interested in stochastic gradient descent and topological data analysis. These methods capture geometrical and topological information of manifolds or datasets. The following are my main publications.
+        </p>
+
+        <div class="research-list">
+            <div class="paper">
+                <h3>Adaptive Stochastic Gradient Descents on Manifolds with an Application on Weighted Low-Rank Approximation</h3>
+                <p><strong>Peiqi Yang, Conglong Xu, Hao Wu</strong></p>
+                <p>In Preparation.</p>
+            </div>
+
+            <div class="paper">
+                <h3>Weighted Low-rank Approximation via Stochastic Gradient Descent on Manifolds</h3>
+                <p><strong>Conglong Xu, Peiqi Yang, Hao Wu</strong></p>
+                <p><a href="https://arxiv.org/abs/2502.14174" target="_blank">arXiv</a></p>
+            </div>
+
+            <div class="paper">
+                <h3>Decomposition of Persistent Homology and Spectral Sequence</h3>
+                <p><strong>Peiqi Yang, Yingfeng Hu, Hao Wu</strong></p>
+                <p> <a href="https://arxiv.org/abs/2403.06078" target="_blank">arXiv</a> <a href="docs/kiw-talk.pdf" target="_blank">Slides</a> </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <section id="teaching">
-        <h2>Teaching</h2>
-        <p>MATH1232</p>
-    </section>
+    <h2 class="custom-title">Teaching</h2>
+    <div class="container">
+        <p class="paragraph">I have been teaching assistant and instructor for various courses in Mathematics. Click on a course to see more details.</p>
+        
+        <div class="course-list">
+            <div class="course" onclick="toggleCourseDetails(this)">
+                <span class="course-title">MATH 1231</span>
+                <div class="course-details">
+                    <p><strong>Single-Variable Calculus I</strong></p>
+                    <p><strong>Semester:</strong> Fall 2022 (TA), Spring 2024 (TA).</p>
+                </div>
+            </div>
 
-    <footer>
-        <p>&copy; 2025 Peiqi Yang. All rights reserved.</p>
-    </footer>
+            <div class="course" onclick="toggleCourseDetails(this)">
+                <span class="course-title">MATH 1232</span>
+                <div class="course-details">
+                    <p><strong>Single-Variable Calculus II</strong></p>
+                    <p><strong>Semester:</strong> Fall 2019 (TA), Fall 2021 (TA), Spring 2025 (TA).</p>
+                </div>
+            </div>
 
+            <div class="course" onclick="toggleCourseDetails(this)">
+                <span class="course-title">MATH 2233</span>
+                <div class="course-details">
+                    <p><strong>Multivariable Calculus</strong></p>
+                    <p><strong>Semester:</strong> Fall 2020 (TA), Summer 2021 (Instructor), Spring 2022 (TA), Fall 2024 (TA).</p>
+                </div>
+            </div>
+
+            <div class="course" onclick="toggleCourseDetails(this)">
+                <span class="course-title">MATH 2184</span>
+                <div class="course-details">
+                    <p><strong>Linear Algebra I</strong></p>
+                    <p><strong>Semester:</strong> Spring 2023 (TA), Fall 2023 (TA).</p>
+                </div>
+            </div>
+
+            <div class="course" onclick="toggleCourseDetails(this)">
+                <span class="course-title">MATH 2971W</span>
+                <div class="course-details">
+                    <p><strong>Mathematical Reasoning</strong></p>
+                    <p><strong>Semester:</strong> Spring 2020 (TA), Spring 2021 (TA).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
